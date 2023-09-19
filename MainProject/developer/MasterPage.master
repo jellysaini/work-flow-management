@@ -1,0 +1,262 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="Developer_MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<title>WORK FLOW MANGEMENT</title>
+<link href="../css/templatemo_style.css" rel="stylesheet" type="text/css" />
+<link href="../css/jquery.ennui.contentslider.css" rel="stylesheet" type="text/css" media="screen,projection" />
+<script language="javascript">
+function clearText(field)
+{
+    if (field.defaultValue == field.value) field.value = '';
+    else if (field.value == '') field.value = field.defaultValue;
+}
+
+</script>
+<style type="text/css">
+        .txt 
+        {
+            width:150px; 
+            height:19px; 
+            border: 3px double #7A807D ;
+
+        }
+        .btn 
+         { 
+	        color:#050;  
+	        font: bold 100% 'trebuchet ms',helvetica,sans-serif; 
+	        background-color:#fed; 
+	        width:70px;
+	        height:27px;
+	        border: 2px solid; 
+	        border-color: #696 #363 #363 #696; 
+	         filter:progid:DXImageTransform.Microsoft.Gradient 
+	        (GradientType=0,StartColorStr='#ffffffff',EndColorStr='#ffeeddaa'); 
+	       
+        }
+        .lnk
+        {
+        	text-decoration:none;
+        }
+        fieldset
+        {
+            border: 1px solid #000000;
+            -moz-border-radius: 8px;
+            border-radius: px;
+        }
+        .forfont
+        {
+        	font-weight:bold;
+	        color:black;	
+	        font-size:220%;
+	        font-style:oblique;
+	        font-family:"Lucida Calligraphy",Georgia,Serif;
+        }
+         .font_size
+        {
+            font-size:13px;
+            font-family:Verdana;	
+        }
+        .fontForOuterLegend
+        {
+            font-size:16px;	
+        }
+        .fontForInnerLegend
+        {
+            font-size:15px;	
+        }
+       .fordrp
+       {
+       	width:175px;
+       	height:24px;
+       	border: 3px double #7A807D ;
+      }
+      .fordrp1
+       {
+       	width:150px;
+       	height:24px;
+       	border: 3px double #7A807D ;
+      }
+      .formail
+      {
+      	width:380px;
+      	height:150px;
+      	border: 3px double #7A807D ;
+      }
+    </style>
+</head>
+<body>
+    
+    <form id="form1" runat="server">
+    
+<div id="templatemo_container">
+
+	<div id="templatemo_site_title_wrapper">
+    
+    	<div id="site_title">
+           
+                <font class="forfont">WORK FLOW MANAGEMENT</font> 
+                
+           
+        </div>
+    
+    </div> <!-- end of site title -->
+    
+	<div id="templatemo_banner">
+
+     <div id="one" class="contentslider">
+            <div class="cs_wrapper">
+                <div class="cs_slider">
+                
+                    <div class="cs_article">
+                        <a href="View_Jobs.aspx">
+                        	<img src="../images/article01.jpg" alt="Artist's interpretation of article headline" />
+                        </a>
+                        
+                        <div class="text">
+                            <h2> <a href="View_Jobs.aspx">View Jobs</a> </h2>
+                            
+                            <p>
+                            Hendrerit tincidunt vero vel eorum claritatem. Soluta legunt quod qui dolore typi. Vel dolore soluta qui odio non. Sollemnes minim eorum feugiat nihil nobis. Gothica dolor in legentis nihil quinta.
+                            </p>
+                            
+                            <a class="readmore" href="View_Jobs.aspx">Click Here</a>
+                   		</div>
+                	</div><!-- End cs_article -->
+                    
+                    <div class="cs_article">
+                        <a href="TimeSheet_View.aspx">
+                        <img src="../images/article02.jpg" alt="Artist's interpretation of article headline" />
+                        </a>
+                        
+                        <div class="text">
+                            <h2> <a href="TimeSheet_View.aspx">View & Fill Time Sheet</a> </h2>
+                            
+                            <p>
+							Lorem ipsum dolor sit ame, consectetur adipiscing elit. In tincidunt, nulla id accumsan ultrices, justo turpis adipiscing nunc, ac pellentesque ipsum massa id dui. Vivamus ut dui ut mi lobortis sodales.
+                            </p>
+                            
+                            <a class="readmore" href="TimeSheet_View.aspx">Click Here</a>
+                   		</div>
+                	</div><!-- End cs_article -->
+                    
+                    <div class="cs_article">
+                        <a href="Chat_Login.aspx">
+                        <img src="../images/article03.jpg" alt="Artist's interpretation of article headline" />
+                        </a>
+                        
+                        <div class="text">
+                            <h2> <a href="Chat_Login.aspx">Group Chat</a> </h2>
+                            
+                            <p>
+                            Hendrerit tincidunt vero vel eorum claritatem. Soluta legunt quod qui dolore typi. Vel dolore soluta qui odio non. Sollemnes minim eorum feugiat nihil nobis. Gothica dolor in legentis nihil quinta.
+                            </p>
+                            
+                            <a class="readmore" href="Chat_Login.aspx">Click Here</a>
+                   		</div>
+                	</div><!-- End cs_article -->
+                    
+                    <div class="cs_article">
+                        <a href="Message.aspx">
+                        <img src="../images/article04.jpg" alt="Artist's interpretation of article headline" />
+                        </a>
+                        
+                        <div class="text">
+                            <h2> <a href="Message.aspx">Send Message</a> </h2>
+                            
+                            <p>
+                            Aliquam elit risus, volutpat quis, mattis ac, elementum eget, mauris. In hac habitasse platea dictumst. Aenean cursus. Maecenas aliquam, ligula id egestas suscipit, nisi sapien dignissim nibh.
+                            </p>
+                            
+                            <a class="readmore" href="Message.aspx">Click Here</a>
+                   		</div>
+                	</div><!-- End cs_article -->
+                	<div class="cs_article">
+                        <a href="Change_Password.aspx">
+                        <img src="../images/article03.jpg" alt="Artist's interpretation of article headline" />
+                        </a>
+                        
+                        <div class="text">
+                            <h2> <a href="Change_Password.aspx">Change Password</a> </h2>
+                            
+                            <p>
+                            Hendrerit tincidunt vero vel eorum claritatem. Soluta legunt quod qui dolore typi. Vel dolore soluta qui odio non. Sollemnes minim eorum feugiat nihil nobis. Gothica dolor in legentis nihil quinta.
+                            </p>
+                            
+                            <a class="readmore" href="Change_Password.aspx">Click Here</a>
+                   		</div>
+                	</div><!-- End cs_article -->
+              
+                </div><!-- End cs_slider -->
+            </div><!-- End cs_wrapper -->
+        </div><!-- End contentslider -->
+
+	<!-- Site JavaScript -->
+	<script type="text/javascript" src="../js/jss.js"></script>
+	<script type="text/javascript" src="../js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="../js/jquery.ennui.contentslider.js"></script>
+	<script type="text/javascript">
+			$(function() {
+				$('#one').ContentSlider({
+					width : '860px',
+					height : '210px',
+					speed : 800,
+					easing : 'easeInOutBack'
+				});
+			});
+    </script>
+	
+
+    </div> 
+    <!-- end of banner -->
+    
+    <div id="templatemo_menu">
+    
+	    <ul>
+            <li><a href="View_Jobs.aspx"><b>View&nbsp;Jobs</b></a></li>
+            <li><a href="TimeSheet_View.aspx"><b>Time&nbsp;Sheet</b></a></li>
+            <li><a href="Message.aspx"><b>Message</b></a></li>
+            <li><a href="Change_Password.aspx"><b>Password</b></a></li>
+            <li><a href="Chat_Login.aspx"><b>Group&nbsp;Chat</b></a></li>
+                     
+        </ul>
+    
+    </div>
+    <div style="width:100%">
+        <table width="100%">
+            <tr>
+             <td align="right" style="width:90%">
+                    <asp:LinkButton ID="logout" runat="server" ForeColor="Blue" 
+                        onclick="logout_Click" ><b>Logout</b></asp:LinkButton>
+                </td>
+                <td style="width:5%">&nbsp;</td>
+            </tr>
+        </table>
+    </div>
+    
+    <div id="templatemo_content">
+       	<div class="section_w920">
+       	 
+       	 
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            
+            </asp:ContentPlaceHolder>
+       	 
+       	 
+        </div>
+    </div>
+    
+    <div id="templatemo_footer">
+        
+        <ul class="footer_menu">
+            
+            <li><a href="#">About!-- end of container
+
+
+    </form>
+
+
+</body>
+</html>
